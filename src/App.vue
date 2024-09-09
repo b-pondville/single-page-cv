@@ -1,24 +1,15 @@
 <script setup>
 import ResumeSection from './ResumeSection.vue';
 import { ref } from 'vue';
+import CVData from './assets/data/CV-Ben.json';
 
-async function fetchCVData() {
-  try {
-    const response = await fetch('src/assets/data/CV-Ben.json');
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error('Error fetching CV data:', error);
-  }
-}
-
-let cvData = ref(null);
-fetchCVData().then((data) => {
-  cvData.value = data;
-});
-
-console.log(cvData);
-
+let mappedLabels = {
+  education: 'Education',
+  softSkills: 'Soft Skills',
+  experience: 'Experience',
+  technicalEnvironment: 'Technical Environment',
+  tasks: 'Tasks',
+};
 </script>
 
 <template>
@@ -27,7 +18,7 @@ console.log(cvData);
   </header>
 
   <main>
-    <ResumeSection :title="''" :content="''" />
+    <ResumeSection v-for="(value, key) in CVData" :key="key" :id="key" :title="mappedLabels[key]" :content="value"/>
   </main>
 </template>
 
