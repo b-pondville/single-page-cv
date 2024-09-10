@@ -3,22 +3,15 @@ import ResumeSection from './ResumeSection.vue';
 import { ref } from 'vue';
 import CVData from './assets/data/CV-Ben.json';
 
-let mappedLabels = {
-  education: 'Education',
-  softSkills: 'Soft Skills',
-  experience: 'Experience',
-  technicalEnvironment: 'Technical Environment',
-  tasks: 'Tasks',
-};
 </script>
 
 <template>
   <header>
-    <h1>Single Page CV</h1>
+    <h1>Benjamin Pondville</h1>
   </header>
 
   <main>
-    <ResumeSection v-for="(value, key) in CVData" :key="key" :id="key" :title="mappedLabels[key]" :content="value"/>
+    <ResumeSection v-for="(value, key) in CVData" :key="key" :id="key" :content="value"/>
   </main>
 </template>
 

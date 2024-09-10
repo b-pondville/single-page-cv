@@ -1,0 +1,184 @@
+{
+  "education": [
+    {
+      "title": "Frontend Developer",
+      "institution": "OpenClassrooms",
+      "diploma": "RNCP Level 6 Diploma (Bac+4)"
+    },
+    {
+      "title": "Web and Digital Production Manager",
+      "institution": "Efficom",
+      "diploma": "RNCP Level 5 Diploma (Bac+2)"
+    },
+    {
+      "title": "Graphic Industry",
+      "institution": "Saint-Luc Tournai",
+      "diploma": "CESS (Belgian BAC) + PAO Operator Diploma"
+    }
+  ],
+  "softSkills": [
+    "Professional Googler and cheatsheet fan",
+    "Optimization addict; emmet is my friend",
+    "Creative problem-solver or not—sometimes I just add a ;",
+    "Effective communicator when not debugging",
+    "Team collaboration enthusiast and happy to be!",
+    "English speaker practicing every day to be better"
+  ],
+  "experience": [
+    {
+      "title": "Webmaster",
+      "company": "IÉSEG School Of Management",
+      "type": "Permanent",
+      "dates": "2021-2024",
+      "tasks": [
+        "Managed all frontend aspects",
+        "Designed, developed, and deployed pages for main and satellite sites (1 main, 20 satellite)",
+        "Developed custom Gutenberg blocks",
+        "Formatted newsletters and mailings",
+        "Continuous improvement: page design updates, bug fixes, performance optimization"
+      ],
+      "technicalEnvironment": [
+        "WordPress / ACF, Ninja Forms",
+        "HTML5",
+        "CSS3 / Sass, Bootstrap",
+        "JavaScript ES6 / jQuery",
+        "PHP",
+        "Sarbacane.app",
+        "Zapier",
+        "Adobe XD, Figma"
+      ]
+    },
+    {
+      "title": "Frontend Developer / UX-UI Web Designer",
+      "company": "Plop Consulting",
+      "type": "Freelance",
+      "dates": "2021",
+      "tasks": [
+        "UX/UI Web Design",
+        "Web integration",
+        "Optimizations",
+        "Global visual identity"
+      ],
+      "technicalEnvironment": [
+        "HTML5",
+        "CSS3",
+        "JavaScript ES6",
+        "JSON",
+        "Git",
+        "Adobe XD",
+        "InDesign / Illustrator / Photoshop"
+      ]
+    },
+    {
+      "title": "Frontend Developer / UX-UI Web Designer",
+      "company": "Projet45",
+      "type": "Freelance",
+      "dates": "2020",
+      "tasks": [
+        "UX/UI Web Design",
+        "Web integration",
+        "Responsive design",
+        "Optimizations",
+        "Global visual identity"
+      ],
+      "technicalEnvironment": [
+        "HTML5",
+        "CSS3",
+        "JavaScript ES6",
+        "JSON",
+        "Git",
+        "Adobe XD",
+        "InDesign / Illustrator / Photoshop"
+      ]
+    },
+    {
+      "title": "Frontend Developer / UX-UI Web Designer",
+      "company": "Manekinecoon",
+      "type": "Freelance",
+      "dates": "2020",
+      "tasks": [
+        "Created an administrable site from scratch",
+        "UX/UI Web Design",
+        "Web development",
+        "Global visual identity"
+      ],
+      "technicalEnvironment": [
+        "HTML5",
+        "CSS3",
+        "JavaScript ES6",
+        "PHP",
+        "MySQL"
+      ]
+    },
+    {
+      "title": "Frontend Developer / UX-UI Web Designer",
+      "company": "Chatterie des Rives de l'Ouche",
+      "type": "Freelance",
+      "dates": "2019",
+      "tasks": [
+        "UX/UI Web Design",
+        "Web development"
+      ],
+      "technicalEnvironment": [
+        "WordPress / ACF",
+        "HTML5",
+        "CSS3",
+        "JavaScript ES6"
+      ]
+    },
+    {
+      "title": "Frontend Developer",
+      "company": "Forestia",
+      "type": "Personal project",
+      "dates": "2019",
+      "tasks": [
+        "Game Design",
+        "Equipment, movement, and combat system",
+        "Scalable, configurable application"
+      ],
+      "technicalEnvironment": [
+        "HTML5",
+        "CSS3",
+        "JavaScript ES6 / OOP",
+        "Git",
+        "Adobe XD, Illustrator"
+      ]
+    },
+    {
+      "title": "Frontend Developer",
+      "company": "We Eat",
+      "type": "Personal project",
+      "dates": "2019",
+      "tasks": [
+        "UX/UI Web Design",
+        "Web integration",
+        "Integration of Google Maps + StreetView API",
+        "Restaurant addition module",
+        "Review and rating module"
+      ],
+      "technicalEnvironment": [
+        "HTML5 / CSS3",
+        "JavaScript ES6",
+        "Google Maps API",
+        "Google StreetView API",
+        "JSON",
+        "Git",
+        "Adobe XD"
+      ]
+    },
+    {
+      "title": "Web & Print Creation Assistant",
+      "company": "L'AGENT X",
+      "type": "Apprenticeship",
+      "dates": "2016-2018",
+      "tasks": [
+        "UI Web Design",
+        "Desktop Publishing (DTP)"
+      ],
+      "technicalEnvironment": [
+        "Sketch, Adobe XD",
+        "InDesign, Illustrator, Photoshop"
+      ]
+    }
+  ]
+}
