@@ -1,45 +1,53 @@
 <script setup>
 const props = defineProps({
-  id: String,
-  title: String,
-  content: Array || String,
+  id: {
+    type: String,
+    required: true,
+  },
+  content: {
+    type: Array || String,
+    required: true,
+  },
 });
 
-console.log(props.content)
-
+console.log(props.content);
 </script>
 
 <template>
-  <section v-if="props.id == 'education'" :id="props.id">
+  <section v-if="props.id === 'education'" :id="props.id">
     <h2>Education</h2>
-    <div v-for="(diploma, key) in props.content">
+    <div v-for="(diploma, key) in props.content" :key="key">
       <h3>{{ diploma.title }}</h3>
       <h4>{{ diploma.institution }} | {{ diploma.diploma }}</h4>
     </div>
   </section>
 
-  <section v-if="props.id == 'softSkills'" :id="props.id">
+  <section v-if="props.id === 'softSkills'" :id="props.id">
     <h2>Soft skills</h2>
     <ul>
-      <li v-for="skill in props.content">{{ skill }}</li>
+      <li v-for="(skill, key) in props.content" :key="key">{{ skill }}</li>
     </ul>
   </section>
 
-  <section v-if="props.id == 'experience'" :id="props.id">
+  <section v-if="props.id === 'experience'" :id="props.id">
     <h2>Experience</h2>
-    <div v-for="(job, key) in props.content">
+    <div v-for="(job, key) in props.content" :key="key">
       <h3>{{ job.title }} - {{ job.dates }}</h3>
-      <h4 v-if="job.type == 'Permanent'">{{ job.company }}</h4>
-      <h4 v-else-if="job.type == 'Freelance'">Freelance at {{ job.company }}</h4>
+      <h4 v-if="job.type === 'Permanent'">{{ job.company }}</h4>
+      <h4 v-else-if="job.type === 'Freelance'">
+        Freelance at {{ job.company }}
+      </h4>
       <h4 v-else>{{ job.type }}</h4>
       <h5>Tasks:</h5>
       <ul>
-        <li v-for="task in job.tasks">{{ task }}</li>
+        <li v-for="(task, key) in job.tasks" :key="key">{{ task }}</li>
       </ul>
 
       <h5>Technical environment:</h5>
       <ul>
-        <li v-for="techno in job.technicalEnvironment">{{ techno }}</li>
+        <li v-for="(techno, key) in job.technicalEnvironment" :key="key">
+          {{ techno }}
+        </li>
       </ul>
     </div>
   </section>
@@ -59,7 +67,7 @@ h2 {
   border-bottom: 2px solid #e0e0e0;
   padding-bottom: 10px;
   margin-bottom: 20px;
-  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 900;
 }
 
@@ -95,7 +103,7 @@ ul li {
   color: #555;
   display: flex;
   align-items: center;
-  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 ul li::before {

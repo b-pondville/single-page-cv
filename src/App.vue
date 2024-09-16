@@ -1,8 +1,6 @@
 <script setup>
-import ResumeSection from './ResumeSection.vue';
-import { ref } from 'vue';
-import CVData from './assets/data/CV-Ben.json';
-
+import ResumeSection from "./assets/components/ResumeSection.vue";
+import CVData from "./assets/data/CV-Ben.json";
 </script>
 
 <template>
@@ -11,7 +9,12 @@ import CVData from './assets/data/CV-Ben.json';
   </header>
 
   <main>
-    <ResumeSection v-for="(value, key) in CVData" :key="key" :id="key" :content="value"/>
+    <ResumeSection
+      v-for="(value, key) in CVData"
+      :key="key"
+      :id="key"
+      :content="value"
+    />
   </main>
 </template>
 
